@@ -9,26 +9,16 @@ function userInfo()
 
     var day = parseInt( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) %7;
 
-    //CC/4)-2*CC -1}+(YY*5/4)+{(MM+1)*26/10
-
+   
     alert("The day of the week you were born is:" + " "+ day);
     
-    // function getGender(){
-    //     var gender = document.getElementsByName["gender"];
-    //     for(i = 0; i < gender.length; i++) {
-    //     if (gender[i].checked){
-    //             return gender[i].value;
-    //         }
-    //     }
-    // }
-    // var gen = getGender();
-    // alert(gen);
+    
     var gender=document.querySelector('input[name="gender"]:checked').value;
    
     
     if (gender==1)           
     {
-        //alert("You are female");
+        alert("You are female");
 
         if (day===0)
         {
