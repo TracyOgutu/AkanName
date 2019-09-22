@@ -5,16 +5,15 @@ function userInfo()
     var mm=parseInt(document.getElementById("mm").value);
     var dd=parseInt(document.getElementById("dd").value);
 
- 
-    if (mm = "" || mm<1 || mm>12) 
+    if (mm == "" || mm<1 || mm>12) 
     { 
-       alert("Please enter a Valid month ");
+       alert("Please enter a valid month ");
        return false;
     }
  
-    if (dd = "" || dd<1 || dd>31) 
+    if (dd == "" || dd<1 || dd>31) 
     { 
-       alert("Please enter a Valid day ");
+       alert("Please enter a valid day ");
        return false;
     }
  
@@ -28,7 +27,7 @@ function userInfo()
     if (gender==1)           
     {
 
-        alert("You are female");
+        
 
         if (day===0)
         {
@@ -73,7 +72,7 @@ function userInfo()
 
     else 
     {
-        alert("You are male");
+       
 
         if (day===0)
         {
