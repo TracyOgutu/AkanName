@@ -1,0 +1,48 @@
+
+.container-fluid{
+    text-align:center;  
+    
+}
+.jumbotron{
+    background-color: rgb(188, 221, 231);   
+    
+}
+h1{
+    font-size: 100px;
+}
+
+    
+h2{
+    font-size:50px;
+    color:black;
+}
+
+#program{
+  background-color: rgb(188, 221, 231);
+  
+  
+}
+form{
+    font-size:20px;
+}
+#desc{
+    font-style: italic;
+}
+#flag{
+    height:100px;
+    width:100px;
+
+}
+#chart{
+    height:500px;
+    width:70%;
+}
+button{
+font-size: 30px;
+background-color:  rgb(188, 221, 231);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button:hover{
+    background-color: orange;
+}
+

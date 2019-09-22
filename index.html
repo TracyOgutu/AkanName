@@ -7,37 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akan Name</title>
-    <link rel = "stylesheet" type ="text/css" href="styles.css">
+
+    <link rel ="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel ="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <h1>Akan Name</h1>
+        
 
     <script src ="akaname.js"></script>
+    
+    <div class = "container-fluid">
+        <div class ="jumbotron">
+                        <img src ="akan2.png" alt="akan">
+                        <img src ="akan3.svg" alt="akan" id ="flag"><br><br>
 
-    <form id ="userdetails">
+                        <h2><b>Akan Name Origin</b></h2>
 
-        <h1>Enter your birthday:</h1>
+                        <h3 id ="desc">
+                                The Akan Name originates from the Akan people of <b>Ghana.</b><br>
+                                Akan people are believed to have migrated to their current location 
+                                from the Sahara desert and Sahel regions of Africa into the forest region around the 11th century.
+                                The Akan are the <b>largest ethnic group</b> in both Ghana and
+                                the Ivory Coast. The Akan speak <b>Kwa languages</b> which are part of the larger Niger-Congo family.
+                                They frequently name their children 
+                                after the <b>day of the week</b> they were born.<br>
+                                Each day has it's own unique name depending on the <b>gender</b> of the child.
+                        </h3>
 
-        Century:
-        <input type = "number"  id= "cc" ><br>
-        Year:
-        <input type = "number"  id="yy"><br>
-        Month:
-        <input type = "number"  id="mm"><br>
-        Day:
-        <input type = "number"   id="dd"><br>
-
-
-        <!-- this is the code for choosing the gender whether male or female  -->
-        <input type = "radio" name="gender" value="1">Female<br>
-        <input type = "radio" name="gender" value="2">Male<br>
-
-         <!-- this is the code for the button that will submit the gender to evaluate the Akan Name  -->
-        <button name ="submit" onclick ="userInfo()">Submit</button>
         
-    </form>
+        </div>
 
+        <div class = "card">
+            
+                <div class = "card-body">
+                         <img src ="akan4.jpg" alt="akan" id ="chart">
+                       
+                </div>
+
+        </div><br><br>
+
+        <div class = "card" id="program">
+
+                <div class ="card-title">
+
+                        <h2><b>Find out your Akan Name:</b></h2>
+
+                        <h3>Enter your birthday:</h3>
+
+                        <h4><i>For example : Century:19 Year:98 Month:2 Day:30</i></h4>
+                </div>
+
+                <div class = "card-body">
+                        <form>
+                               
+                                <div class="form-group">
+
+                                        <label for="cc">Century:</label>
+                                        <input type = "number" id= "cc" required>
+
+                                        <label for="yy">Year:</label>
+                                        <input type = "number"  id="yy" required>
+
+                                        <label for="cc">Month:</label>
+                                        <input type = "number"  id="mm" min="1" max="12"  required>
+
+                                        <label for="cc">Day:</label>
+                                        <input type = "number"  id="dd" min="1"max="31"  required>
+
+                                </div>
+                                              
+                                <div class="checkbox">
+
+                                    <input type = "radio" name="gender" value="1" required>Female<br>
+                                    </div>
+                                    
+                                    <input type = "radio" name="gender" value="2" required>Male<br>
+                                    </div><br>
+
+                                </div>
+
+                                
+                                <button name ="submit" onclick ="userInfo();">Submit</button>
+                                
+
+                        </form>
+                 </div>    
+                
+        </div>
+            
+        
+    </div>
 </body>
 
 </html>
